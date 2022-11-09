@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login/SignIn Page</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="background">
+        <div class="formBox">
+            <div class="buttonBox">
+                <div id="btn">  </div>
+                <button type="button" class="toggle-btn" id="login" onclick="signup()"> Sign Up</button>
+                <button type="button" class="toggle-btn" id="register" onclick="login()"> LogIn</button>
+                
+            </div>
+
+            <form class="register" id="signin">
+                <input type="text" class="inputField details details-first" placeholder="First Name" required> <br>
+                <input type="text" class="inputField details" placeholder="Last Name" required> <br>
+                <input type="text" class="inputField details" placeholder="Enter Username" required> <br>
+                <input type="password" class="inputField details" placeholder="Enter Password" required> <br>
+                <input type="checkbox" class="inputCheck"> <span class="agree"> I agree to the terms & conditions.</span><br>
+                <button type="submit" class="submitBtn signup-btn"> Sign Up</button> <br>
+                <p class="para1"> Or signup with</p>
+                <div class="icons">
+                    <img src="fb.png" alt="#">
+                    <img src="google.png" alt="#">
+                    <img src="twt.png" alt="#">
+                </div>
+                
+            </form>
+
+            <form class="loginForm" id="loginForm">
+                <input type="text" class="inputField" placeholder="User Id" required> <br>
+                <input type="password" class="inputField" placeholder="Enter Password" required> <br>
+                <input type="checkbox" class="inputCheck"> <span class="remember"> Remember me</span><br>
+                <button type="submit" class="submitBtn login-btn"> Log In</button> <br>
+                <p class="para2"> Or Login with</p>
+                <div class="icons">
+                    <img src="fb.png" alt="#">
+                    <img src="google.png" alt="#">
+                    <img src="twt.png" alt="#">
+                </div>
+            </form>
+    </div>
+    </section>
+
+    <script>
+        var x = document.getElementById("loginForm");
+        var y = document.getElementById("signin");
+        var z = document.getElementById("btn");
+
+        function login() {
+            x.style.left = "20px";
+            y.style.left = "-400px";
+            z.style.left = "110px";
+        }
+        function signup(){
+            x.style.left = "450px";
+            y.style.left = "20px";
+            z.style.left = "0";
+        }
+        
+    </script>
+    
+</body>
+</html>

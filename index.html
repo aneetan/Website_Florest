@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title> Florest</title>
+</head>
+<body id="mode">
+    <!-- Navbar Section -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="logo"> <img src="images/logonew.png" alt="Logo"></a>
+        <ul class="navbar-nav">
+            <li class="active"> <a href="#home"> Home </a></li>
+            <li> <a href="#services"> Services </a></li>
+            <li> <a href="#products"> Products </a></li>
+            <li> <a href="#feedback"> Feedback </a></li>
+        </ul>
+            <a href="http://127.0.0.1:5501/form.html" target="_self"> <button type="button" class="btn btn-success btn-signup">Sign Up</button> </a>
+            <button type="button" id="btn-name" class="btn btn-success btn-change" onclick="changeBg()">Dark</button>
+    </nav>
+
+     <!-- Home Section -->
+     <section id="home" class="home">
+        <div class="container-fluid">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col text-start mt-5 tagline">
+                        <h1>Delivering <span>Plants,</span> <br>
+                        Delivering <span>Happiness!!</span></h1>
+                        <div class="text">
+                        <p class="header-text">Discover everything you need to know about your plants, treat them with kindness and they will
+                            take care of you.</p>
+                            </div>
+                        <a href="#products"><button type="button" class="btn btn-success">Shop Now</button> </a>
+                        <button class="btn btn-success date-time" type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                        Date/time</button>
+                        <p id="demo"></p>
+                    </div>
+                    <div class="col mt-3 mb-3">
+                        <img class="col mb-3 mt-3" src="images/image.jpg" alt="Image" width="500" height="500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="services">
+        <div class="container text-center mb-5 mt-5">
+            <div class="service_main_head text-center mb-5">
+                <h1>Our Services</h1>
+            </div>
+            <div class="row align-items-start">
+                <div class="col ser-img">
+                    <img src="images/delivery.png" alt="" width="100" height="100">
+                    <div class="head_services">
+                        <h6 class="services-1">Free Delivery</h6>
+                    </div>
+                    <p>Free shipping around the world for all orders above $100.</p>
+                </div>
+                <div class="col ser-img">
+                    <img src="images/payment.png" alt="" width="100" height="100">
+                    <div class="head_services">
+                        <h6 class="services-1">Safe Payment</h6>
+                    </div>
+    
+                    <p>Information security while using our payment gateways.</p>
+                </div>
+                <div class="col ser-img">
+                    <img src="images/friendly.png" alt="" width="100" height="100">
+                    <div class="head_services">
+                        <h6 class="services-1">Friendly Services</h6>
+                    </div>
+                    <p>You have 10-days return guarantee for every single order.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+        <div class="container-fluid text-center">
+            <div class="service_main_head text-center mb-5">
+                <h1 class="text-center">Our Products</h1>
+            </div>
+            <div class="row align-items-start">
+                <div class="col product-img">
+                    <img src="images/snake plant.jfif" alt="" width="300" height="300">
+                    <div class="service_head">
+                        <h6>Snake Plant</h6>
+                    </div>
+                    <hr class="line">
+                    <div class="offer_service">
+                        <p>Now 54% Off</p>
+                    </div>
+                    <div class="price_service">
+                        <p>$31</p>
+                    </div>
+                    <button type="button" class="btn btn-success cart">ADD TO CART</button>
+                </div>
+                <div class="col product-img">
+                    <img src="images/spider plant.jfif" alt="" width="300" height="300">
+                    <div class="service_head">
+                        <h6>Spider Plant</h6>
+                    </div>
+                    <hr class="line">
+                    <div class="offer_service">
+                        <p>Now 50% Off</p>
+                    </div>
+                    <div class="price_service">
+                        <p>$25</p>
+                    </div>
+                    <button type="button" class="btn btn-success cart">ADD TO CART</button>
+                </div>
+                <div class="col product-img">
+                    <img src="images/peace lily.jfif" alt="" width="300" height="300">
+                    <div class="service_head">
+                        <h6>Peace Lily</h6>
+                    </div>
+                    <hr class="line">
+                    <div class="offer_service">
+                        <p>Now 75% Off</p>
+                    </div>
+                    <div class="price_service">
+                        <p>$25</p>
+                    </div>
+                    <button type="button" class="btn btn-success cart"> ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="feedback" id="feedback">
+        <h2> Feel free to drop us your feedback!</h2>
+        <form class="feedback-form mb-3 input-form" name="myForm"  method="post" onsubmit="return validateForm();">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="text" name="email" class="form-control" required>
+            <label for="exampleInputPassword1" class="form-label">Feedback</label>
+            <input type="text" class="form-control feed" id="exampleInputPassword1" required>
+            
+            <button id="submit" type="submit" class="btn btn-success submit">Submit</button>
+        </form>
+    </section>
+
+     <!-- Footer -->
+     <footer class="py-3 my-4 footer">
+        <ul class="nav justify-content pb-3 mb-3 footer-link">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terms Of Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Security</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-envelope"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <p class="text-left text-muted footer-text">© 2021 Company, Inc</p>
+    </footer>
+
+    <script>
+        // Changing Dark/Light mode
+        function changeBg() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        // Changing button name from light to dark and vv
+        const btn = document.getElementById("btn-name");
+        btn.addEventListener("click", ()=>{
+            if(btn.innerText === "Dark"){
+            btn.innerText = "Light";
+            }else{
+            btn.innerText= "Dark";
+            }
+        });
+
+        // validate email address in form with alert
+        function validateForm()  {  
+            var x=document.myForm.email.value;  
+            var atposition=x.indexOf("@");  
+            var dotposition=x.lastIndexOf(".");  
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+                alert("Please enter a valid e-mail address \n");  
+                return false;  
+            }  
+        }  
+
+        //changing color of active link using js
+        $(document).ready(function () {
+              $("ul.navbar-nav > li").click(function (e) {
+               $("ul.navbar-nav > li").removeClass("active");
+               $(this).addClass("active");
+                });
+            });
+
+
+    </script>
+
+</body>
+</html>
