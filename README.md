@@ -15,3 +15,8 @@ This website consist the the following pages:
 
 **Frontend:** HTML, CSS, JavaScript
 **External libraries:** Bootstrap
+
+## Screenshots:
+![Landing Page](https://github.com/aneetan/Website_Florest/issues/1#issue-1962808106)
+![Product Description](https://github.com/aneetan/Website_Florest/issues/1#issue-1962808106)
+![Contact Us](https://github.com/aneetan/Website_Florest/issues/1#issue-1962808106)
