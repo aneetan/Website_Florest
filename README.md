@@ -1,4 +1,4 @@
-# Simple Voting System 
+# E-commerce Website
 
 This GitHub project is an e-commerce website of plant shop focusing on frontend development. The aim of the project is to provide a user-friendly and efficient platform for conducting e-commerce in business areas.
     
